@@ -5,9 +5,15 @@
 #ifndef ENTELECHYSYSTEM_BASEUNIT_H
 #define ENTELECHYSYSTEM_BASEUNIT_H
 
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
 // 基准单元
 class BaseUnit {
-public:
+private: uint id; // 单元id
+public: vector<uint> unit_interface; // 单元接口
 };
 
 
