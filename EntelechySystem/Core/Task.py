@@ -1,14 +1,12 @@
 """
-@File   : Neure.py
+@File   : Task.py
 @Author : Ethan Lin
 @Date   : 2022/06/19
 @Desc   : 
 """
-import numpy as np
 
 
-class Neure:
-    id: np.dtype(np.uint)
+class Task:
+    id: int
     name: str
-
     pass
