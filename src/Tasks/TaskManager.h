@@ -5,7 +5,7 @@
 #ifndef ENTELECHYSYSTEM_TASKMANAGER_H
 #define ENTELECHYSYSTEM_TASKMANAGER_H
 
-
+/// 任务管理器
 class TaskManager {
     
     // TODO 初始化任务

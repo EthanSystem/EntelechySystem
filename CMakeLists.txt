@@ -17,8 +17,9 @@ add_executable(
         src/Unit/CanvasUnit.h
         src/Tasks/TaskManager.cpp
         src/Tasks/TaskManager.h
-        src/Tasks/BaseTask.h
-)
+        src/KnowledgeBase/KnowledgeManager.cpp
+        src/KnowledgeBase/KnowledgeManager.h
+        src/Neure/Neure.cpp src/Neure/Neure.h)
 
 #cmake_minimum_required(VERSION 3.22)
 #project(ElementalCognitionSystem)

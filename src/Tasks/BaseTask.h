@@ -1,8 +1,0 @@
-//
-// Created by Ethan on 2022/06/07.
-//
-
-#ifndef ENTELECHYSYSTEM_BASETASK_H
-#define ENTELECHYSYSTEM_BASETASK_H
-
-#endif //ENTELECHYSYSTEM_BASETASK_H

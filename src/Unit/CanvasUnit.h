@@ -8,7 +8,7 @@
 /// 画布单元。用于生成类似矩阵的二维可动画画布。
 class CanvasUnit {
 private:
-    *index_x;
+    unsigned int *index_x; // 记录画布单元索引
 
 };
 

@@ -1,0 +1,14 @@
+//
+// Created by Ethan on 2022/06/18.
+//
+
+#ifndef ENTELECHYSYSTEM_KNOWLEDGEMANAGER_H
+#define ENTELECHYSYSTEM_KNOWLEDGEMANAGER_H
+
+
+class KnowledgeManager {
+
+};
+
+
+#endif //ENTELECHYSYSTEM_KNOWLEDGEMANAGER_H
