@@ -1,8 +1,17 @@
 #include <iostream>
+#include "Core/Tasks/Task.h"
+
+//#include "Task.h"
 
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+
+
+
+    int x = 10;
+    Task task;
+    
+    std::cout << "Hello, World!" << x << std::endl;
     return 0;
 }
 

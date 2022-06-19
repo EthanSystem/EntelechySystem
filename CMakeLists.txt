@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.22)
 project(EntelechySystem)
 
+cmake_minimum_required(VERSION 3.22)
+
 set(CMAKE_CXX_STANDARD 20)
 
 include_directories("/usr/local/include/eigen3")
@@ -9,6 +11,9 @@ include_directories("/Applications/Julia-1.7.app/Contents/Resources/julia/includ
 add_executable(
         EntelechySystem
         src/main.cpp
+        src
+        src/Core
+        src/Core/Tasks
         src/Core/Unit/BaseUnit.cpp
         src/Core/Unit/BaseUnit.h
         src/Core/Unit/GateUnit.cpp
@@ -19,12 +24,22 @@ add_executable(
         src/Core/Tasks/TaskManager.h
         src/Core/KnowledgeBase/KnowledgeManager.cpp
         src/Core/KnowledgeBase/KnowledgeManager.h
-        src/Core/Neure/Neure.cpp src/Core/Neure/Neure.h src/World/CreateNeuroNetwork.cpp src/World/CreateNeuroNetwork.h)
+        src/Core/Neure/Neure.cpp
+        src/Core/Neure/Neure.h
+        src/World/CreateNeuroNetwork.cpp
+        src/World/CreateNeuroNetwork.h
+        src/Core/Tasks/Task.cpp
+        src/Core/Tasks/Task.h
+        src/Core/Lingo/Lingo.cpp
+        src/Core/Lingo/Lingo.h
+        src/Core/Storage.cpp
+        src/Core/Storage.h
 
-#cmake_minimum_required(VERSION 3.22)
+)
+
 #project(ElementalCognitionSystem)
 #
-#set(CMAKE_CXX_STANDARD 14)
+#set(CMAKE_CXX_STANDARD 20)
 #
 #include_directories("/usr/local/include/eigen3")
 #include_directories("/Applications/Julia-1.7.app/Contents/Resources/julia/include/julia")
