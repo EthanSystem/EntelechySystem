@@ -1,8 +1,10 @@
 """
-@File   : TaskManager.py
+@File   : Storage.py
 @Author : Ethan Lin
 @Date   : 2022/06/19
 @Desc   : 
 """
 
-def
+class Storage:
+
+    pass
