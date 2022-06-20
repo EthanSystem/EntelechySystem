@@ -11,8 +11,8 @@ using namespace std;
 
 class Lingo {
     int id;
-    string WordType;
-
+    string *WordType;
+    string *WordContent;
 
 };
 

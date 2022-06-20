@@ -8,3 +8,23 @@
 void TaskManager::initTask() {
 
 }
+
+void TaskManager::getNumOfTasks() {
+
+}
+
+void TaskManager::sortTask() {
+
+}
+
+void TaskManager::calcPriorityOfTask() {
+
+}
+
+void TaskManager::decideTaskProcess() {
+
+}
+
+void TaskManager::scheduleTasks() {
+
+}
