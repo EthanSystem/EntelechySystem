@@ -1,8 +1,6 @@
 cmake_minimum_required(VERSION 3.22)
 project(EntelechySystem)
 
-cmake_minimum_required(VERSION 3.22)
-
 set(CMAKE_CXX_STANDARD 20)
 
 include_directories("/usr/local/include/eigen3")
