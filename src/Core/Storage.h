@@ -8,7 +8,7 @@
 
 class Storage {
 
-    int initStorageArea(); // 开辟空间
+    int initBrainStorageSpace(); // 开辟大脑空间用于放置神经元
 
 };
 

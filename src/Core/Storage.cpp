@@ -3,3 +3,8 @@
 //
 
 #include "Storage.h"
+
+int Storage::initBrainStorageSpace() {
+
+    return 0;
+}
