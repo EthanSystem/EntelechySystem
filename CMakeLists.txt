@@ -33,7 +33,7 @@ add_executable(
         src/Core/Storage.cpp
         src/Core/Storage.h
 
-)
+        src/Core/Machine/NeedsPerceptionMachine.cpp src/Core/Machine/NeedsPerceptionMachine.h src/Core/Machine/BaseMachine.cpp src/Core/Machine/BaseMachine.h)
 
 #project(ElementalCognitionSystem)
 #

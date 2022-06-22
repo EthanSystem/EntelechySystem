@@ -13,7 +13,6 @@ class Lingo {
     int id;
     string *WordType;
     string *WordContent;
-
 };
 
 
