@@ -3,11 +3,35 @@ project(EntelechySystem)
 
 set(CMAKE_CXX_STANDARD 20)
 
-include_directories("/usr/local/include/eigen3")
+set(BOOST_ROOT "/usr/local/include/boost")
+
+#让Clion自动寻找boost
+find_package(Boost 1.79.0 COMPONENTS system filesystem REQUIRED)
+include_directories(${Boost_INCLUDE_DIRS})
+
+#include_directories("/usr/local/include/eigen3")
+#include_directories("/usr/local/include/boost")
 include_directories("/Applications/Julia-1.7.app/Contents/Resources/julia/include/julia")
+
+## 手动配置搜索路径
+
+#添加头文件搜索路径
+include_directories(/usr/local/include)
+
+#添加库文件搜索路径
+link_directories(/usr/local/lib)
+
+#用于将当前目录下的所有源文件的名字保存在变量 DIR_SRCS 中
+aux_source_directory(. DIR_SRCS)
+
+
+#在这里根据名字boost_thread去寻找libboost_thread.a文件
+#target_link_libraries(demo boost_thread boost_system)
+
 
 add_executable(
         EntelechySystem
+        ${DIR_SRCS}
         src/main.cpp
         src
         src/Core
@@ -32,8 +56,11 @@ add_executable(
         src/Core/Lingo/Lingo.h
         src/Core/Storage.cpp
         src/Core/Storage.h
-
-        src/Core/Machine/NeedsPerceptionMachine.cpp src/Core/Machine/NeedsPerceptionMachine.h src/Core/Machine/BaseMachine.cpp src/Core/Machine/BaseMachine.h)
+        src/Core/Machine/NeedsPerceptionMachine.cpp
+        src/Core/Machine/NeedsPerceptionMachine.h
+        src/Core/Machine/BaseMachine.cpp
+        src/Core/Machine/BaseMachine.h
+)
 
 #project(ElementalCognitionSystem)
 #
