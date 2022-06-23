@@ -60,7 +60,7 @@ add_executable(
         src/Core/Machine/NeedsPerceptionMachine.h
         src/Core/Machine/BaseMachine.cpp
         src/Core/Machine/BaseMachine.h
-)
+        src/Core/Object/Object.cpp src/Core/Object/Object.h src/Core/Machine/SenderMachine.cpp src/Core/Machine/SenderMachine.h src/Core/Machine/ReceiverMachine.cpp src/Core/Machine/ReceiverMachine.h)
 
 #project(ElementalCognitionSystem)
 #

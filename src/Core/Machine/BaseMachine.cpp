@@ -3,3 +3,7 @@
 //
 
 #include "BaseMachine.h"
+
+void Object::set_type_name() {
+    this->type_name="machine";
+}
