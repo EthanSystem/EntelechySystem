@@ -8,7 +8,8 @@
 
 #include "BaseMachine.h"
 
-class NeedsPerceptionMachine: BaseMachine {
+class NeedsPerceptionMachine : BaseMachine {
+public:
 
 
 };

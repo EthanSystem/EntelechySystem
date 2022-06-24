@@ -3,7 +3,16 @@ project(EntelechySystem)
 
 set(CMAKE_CXX_STANDARD 20)
 
-set(BOOST_ROOT "/usr/local/include/boost")
+
+#if(EXISTS ${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
+#    include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
+#    conan_basic_setup()
+#else()
+#    message(WARNING "The file conanbuildinfo.cmake doesn't exist, you have to run conan install first")
+#endif()
+
+
+#set(BOOST_ROOT "/usr/local/include/boost")
 
 #让Clion自动寻找boost
 find_package(Boost 1.79.0 COMPONENTS system filesystem REQUIRED)
@@ -11,7 +20,7 @@ include_directories(${Boost_INCLUDE_DIRS})
 
 #include_directories("/usr/local/include/eigen3")
 #include_directories("/usr/local/include/boost")
-include_directories("/Applications/Julia-1.7.app/Contents/Resources/julia/include/julia")
+#include_directories("/Applications/Julia-1.7.app/Contents/Resources/julia/include/julia")
 
 ## 手动配置搜索路径
 
@@ -60,7 +69,7 @@ add_executable(
         src/Core/Machine/NeedsPerceptionMachine.h
         src/Core/Machine/BaseMachine.cpp
         src/Core/Machine/BaseMachine.h
-        src/Core/Object/Object.cpp src/Core/Object/Object.h src/Core/Machine/SenderMachine.cpp src/Core/Machine/SenderMachine.h src/Core/Machine/ReceiverMachine.cpp src/Core/Machine/ReceiverMachine.h)
+        src/Core/Object/Object.cpp src/Core/Object/Object.h src/Core/Machine/SenderMachine.cpp src/Core/Machine/SenderMachine.h src/Core/Machine/ReceiverMachine.cpp src/Core/Machine/ReceiverMachine.h src/Core/Agent/Agent.cpp src/Core/Agent/Agent.h)
 
 #project(ElementalCognitionSystem)
 #

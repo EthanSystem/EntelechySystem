@@ -24,10 +24,10 @@ class BaseMachine : public Object {
 public:
 //    void set_type_name();
 /// 发信端单元
-    SenderMachine senderUnit();
+    SenderMachine senderMachine();
 
 /// 收信端单元
-    ReceiverMachine receiverUnit();
+    ReceiverMachine receiverMachine();
 };
 
 

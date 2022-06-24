@@ -6,7 +6,11 @@
 #define ENTELECHYSYSTEM_SENDERMACHINE_H
 
 
-class SenderMachine {
+#include "../Object/Object.h"
+#include "BaseMachine.h"
+
+class SenderMachine: public Object,public BaseMachine {
+public:
 
 };
 
