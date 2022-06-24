@@ -1,0 +1,14 @@
+//
+// Created by Ethan on 2022/06/24.
+//
+
+#ifndef ENTELECHYSYSTEM_RECEIVERUNIT_H
+#define ENTELECHYSYSTEM_RECEIVERUNIT_H
+
+
+class ReceiverUnit {
+
+};
+
+
+#endif //ENTELECHYSYSTEM_RECEIVERUNIT_H

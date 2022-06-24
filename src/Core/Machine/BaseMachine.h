@@ -10,8 +10,8 @@
 //#include <boost/uuid/uuid_io.hpp>
 //#include <boost/uuid/uuid_generators.hpp>
 #include "../Object/Object.h"
-#include "SenderMachine.h"
-#include "ReceiverMachine.h"
+#include "SenderUnit.h"
+#include "ReceiverUnit.h"
 
 class BaseMachine : public Object {
 //private:
@@ -24,10 +24,10 @@ class BaseMachine : public Object {
 public:
 //    void set_type_name();
 /// 发信端单元
-    SenderMachine senderMachine();
+    SenderUnit senderUnit;
 
 /// 收信端单元
-    ReceiverMachine receiverMachine();
+    ReceiverUnit receiverUnit;
 };
 
 

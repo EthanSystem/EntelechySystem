@@ -69,17 +69,6 @@ add_executable(
         src/Core/Machine/NeedsPerceptionMachine.h
         src/Core/Machine/BaseMachine.cpp
         src/Core/Machine/BaseMachine.h
-        src/Core/Object/Object.cpp src/Core/Object/Object.h src/Core/Machine/SenderMachine.cpp src/Core/Machine/SenderMachine.h src/Core/Machine/ReceiverMachine.cpp src/Core/Machine/ReceiverMachine.h src/Core/Agent/Agent.cpp src/Core/Agent/Agent.h)
+        src/Core/Object/Object.cpp src/Core/Object/Object.h src/Core/Machine/SenderUnit.cpp src/Core/Machine/SenderUnit.h src/Core/Machine/ReceiverUnit.cpp src/Core/Machine/ReceiverUnit.h src/Core/Agent/Agent.cpp src/Core/Agent/Agent.h)
 
-#project(ElementalCognitionSystem)
-#
-#set(CMAKE_CXX_STANDARD 20)
-#
-#include_directories("/usr/local/include/eigen3")
-#include_directories("/Applications/Julia-1.7.app/Contents/Resources/julia/include/julia")
-#
-#add_executable(ElementalCognitionSystem main.cpp src/Unit/BaseUnit.cpp src/Unit/BaseUnit.h src/Unit/GateUnit.cpp src/Unit/GateUnit.h src/Unit/CanvasUnit.cpp src/Unit/CanvasUnit.h src/Tasks/TaskManager.cpp src/Tasks/TaskManager.h src/Tasks/BaseTask.h)
-#
-#
-##add_executable(rundraft rundraft.cpp)
 
