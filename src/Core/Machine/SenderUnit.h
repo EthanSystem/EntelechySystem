@@ -14,7 +14,9 @@ class SenderUnit : public Object {
 private:
     std::string content_body;
     std::string feedback_sign;
+
 public:
+    /// todo 发送内容
     std::string send_content(std::string content);
 
 };

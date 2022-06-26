@@ -6,6 +6,8 @@
 #include "SenderUnit.h"
 
 std::string SenderUnit::send_content(std::string content) {
-    /// TODO 对接管线
+    /// todo 对接管线
+    content = content_body;
+    feedback_sign="sent";
     return feedback_sign;
 }

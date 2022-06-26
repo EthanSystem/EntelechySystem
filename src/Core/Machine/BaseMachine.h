@@ -12,6 +12,7 @@
 #include "../Object/Object.h"
 #include "SenderUnit.h"
 #include "ReceiverUnit.h"
+#include "ReadUnit.h"
 
 class BaseMachine : public Object {
 //private:
@@ -28,6 +29,9 @@ public:
 
 /// 收信端单元
     ReceiverUnit receiverUnit;
+
+    /// 读取单元
+    ReadUnit readUnit;
 };
 
 
