@@ -7,11 +7,11 @@
 
 
 #include <iostream>
+#include "BaseUnit.h"
 
-class ReceiverUnit {
+class ReceiverUnit:BaseUnit {
 private:
-    std::string content_body;
-    std::string feedback_sign;
+
 
 public:
     /// 接收内容

@@ -6,12 +6,11 @@
 #define ENTELECHYSYSTEM_READUNIT_H
 
 
-#include "../Object/Object.h"
+#include "BaseUnit.h"
 
-class ReadUnit : Object {
+class ReadUnit : BaseUnit {
 private:
-    std::string content_body;
-    std::string feedback_sign;
+
 
 public:
     std::string read_content(std::string content);

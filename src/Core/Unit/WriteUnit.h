@@ -7,11 +7,11 @@
 
 
 #include <string>
+#include "BaseUnit.h"
 
-class WriteUnit {
+class WriteUnit:BaseUnit {
 private:
-    std::string content_body;
-    std::string feedback_sign;
+
 
 public:
     /// 写入内容

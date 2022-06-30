@@ -6,14 +6,14 @@
 #define ENTELECHYSYSTEM_SENDERUNIT_H
 
 
-#include "../Object/Object.h"
+#include "BaseUnit.h"
+
 /**
  * 发送部件
  */
-class SenderUnit : public Object {
+class SenderUnit : BaseUnit {
 private:
-    std::string content_body;
-    std::string feedback_sign;
+
 
 public:
     /// todo 发送内容

@@ -10,9 +10,9 @@
 //#include <boost/uuid/uuid_io.hpp>
 //#include <boost/uuid/uuid_generators.hpp>
 #include "../Object/Object.h"
-#include "SenderUnit.h"
-#include "ReceiverUnit.h"
-#include "ReadUnit.h"
+#include "../Unit/SenderUnit.h"
+#include "../Unit/ReceiverUnit.h"
+#include "../Unit/ReadUnit.h"
 
 class BaseMachine : public Object {
 //private:

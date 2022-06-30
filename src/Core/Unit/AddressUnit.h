@@ -7,16 +7,17 @@
 
 
 #include <string>
+#include "BaseUnit.h"
 
-class AddressUnit {
+class AddressUnit:BaseUnit {
 private:
-    std::string content_body;
-    std::string feedback_sign;
+
 
 public:
     void address_content();
 
 
+    void address_content(std::list<int> content);
 };
 
 
