@@ -24,6 +24,9 @@ public:
 
     /// 获取类型名称
     std::string get_type_name();
+
+    /// 获取id
+    std::string get_id();
 };
 
 

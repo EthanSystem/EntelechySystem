@@ -41,7 +41,7 @@ aux_source_directory(. DIR_SRCS)
 add_executable(
         EntelechySystem
         ${DIR_SRCS}
-        src/main.cpp
+        Scripts/main.cpp
         src
         src/Core
         src/Core/Tasks
@@ -69,6 +69,22 @@ add_executable(
         src/Core/Machine/NeedsPerceptionMachine.h
         src/Core/Machine/BaseMachine.cpp
         src/Core/Machine/BaseMachine.h
-        src/Core/Object/Object.cpp src/Core/Object/Object.h src/Core/Unit/SenderUnit.cpp src/Core/Unit/SenderUnit.h src/Core/Unit/ReceiverUnit.cpp src/Core/Unit/ReceiverUnit.h src/Core/Agent/Agent.cpp src/Core/Agent/Agent.h src/Core/Unit/ReadUnit.cpp src/Core/Unit/ReadUnit.h src/Core/Unit/WriteUnit.cpp src/Core/Unit/WriteUnit.h src/Core/Unit/AddressUnit.cpp src/Core/Unit/AddressUnit.h src/Core/Unit/ContentUnit.cpp src/Core/Unit/ContentUnit.h)
+        src/Core/Object/Object.cpp
+        src/Core/Object/Object.h
+        src/Core/Unit/SenderUnit.cpp
+        src/Core/Unit/SenderUnit.h
+        src/Core/Unit/ReceiverUnit.cpp
+        src/Core/Unit/ReceiverUnit.h
+        src/Core/Agent/Agent.cpp
+        src/Core/Agent/Agent.h
+        src/Core/Unit/ReadUnit.cpp
+        src/Core/Unit/ReadUnit.h
+        src/Core/Unit/WriteUnit.cpp
+        src/Core/Unit/WriteUnit.h
+        src/Core/Unit/AddressUnit.cpp
+        src/Core/Unit/AddressUnit.h
+        src/Core/Unit/ContentUnit.cpp
+        src/Core/Unit/ContentUnit.h
+)
 
 

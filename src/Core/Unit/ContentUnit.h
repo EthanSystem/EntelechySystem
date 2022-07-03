@@ -9,7 +9,8 @@
 #include "BaseUnit.h"
 
 class ContentUnit: BaseUnit {
-
+public:
+    std::string ContentName;
 };
 
 

@@ -8,14 +8,15 @@
 #include <iostream>
 #include <vector>
 #include "../Object/Object.h"
-#include "ContentUnit.h"
 
 using namespace std;
 
-// 基准单元
+/** 基准单元
+ *
+ */
 class BaseUnit:Object {
 protected:
-    ContentUnit content_body;
+    std::string content_body;
     std::string feedback_sign;
 
 public:

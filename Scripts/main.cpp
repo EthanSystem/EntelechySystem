@@ -1,6 +1,5 @@
 #include <iostream>
 #include <ctime>
-#include "Core/Tasks/Task.h"
 
 /**
  * 主程序。简单的世界模拟器，用于初始化和运行模型。
@@ -29,7 +28,7 @@ int main() {
     for (int current_step = 0; current_step < finish_step; ++current_step) {
 
         if (current_step % delta_step == 0) {
-            std::cout << "步：" << current_step << endl;
+            std::cout << "步：" << current_step << std::endl;
         }
 
         /// todo 运行系统模型 ==========
@@ -42,7 +41,7 @@ int main() {
     // 定时结束
     finish_time = clock();
 
-    std::cout << "耗时：" << finish_time - start_time << endl;
+    std::cout << "耗时：" << finish_time - start_time << std::endl;
 
 }
 

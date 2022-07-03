@@ -24,14 +24,18 @@ class BaseMachine : public Object {
 //    std::string uuid_string = boost::uuids::to_string(id);
 public:
 //    void set_type_name();
-/// 发信端单元
+
+    /// 发信端单元
     SenderUnit senderUnit;
 
-/// 收信端单元
+    /// 收信端单元
     ReceiverUnit receiverUnit;
 
     /// 读取单元
     ReadUnit readUnit;
+
+    /// 写入单元
+    WriteUnit writeUnit;
 };
 
 
