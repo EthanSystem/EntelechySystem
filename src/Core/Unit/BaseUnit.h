@@ -8,19 +8,27 @@
 #include <iostream>
 #include <vector>
 #include "../Object/Object.h"
+#include "../Content/Content.h"
 
-using namespace std;
 
 /** 基准单元
  *
  */
-class BaseUnit:Object {
-protected:
-    std::string content_body;
-    std::string feedback_sign;
+class BaseUnit : Object {
+private:
+    std::string type_name = "unit type";
+    Content content;
+    Content feedback_sign;
+    using Object::Object;
 
 public:
-    vector<uint> unit_interface; // 单元接口
+
+    BaseUnit(const std::string &unit_type_name,
+             const Content &content,
+             const Content &feedback_sign,
+             const Object &object);
+
+    std::vector <uint> unit_interface; // 单元接口
 };
 
 

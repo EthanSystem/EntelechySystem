@@ -9,13 +9,17 @@
 #include "BaseUnit.h"
 
 class ReadUnit : BaseUnit {
+protected:
+    std::string unit_type_name = "read unit type";
 private:
-
-
+    Content feedback_sign;
+    using BaseUnit::BaseUnit;
 public:
-    std::string read_content(std::string content);
+    ReadUnit(const std::string &unit_type_name,
+             const Content &feedback_sign,
+             const BaseUnit &baseUnit);
 
-
+    Content read_content(Content content);
 
 
 };

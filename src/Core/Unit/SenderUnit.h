@@ -17,7 +17,7 @@ private:
 
 public:
     /// todo 发送内容
-    std::string send_content(std::string content);
+    Content send_content(Content content);
 
 };
 

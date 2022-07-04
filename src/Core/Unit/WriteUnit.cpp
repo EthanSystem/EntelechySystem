@@ -4,8 +4,8 @@
 
 #include "WriteUnit.h"
 
-std::string WriteUnit::write_content(std::string content) {
-    content_body = content;
+Content WriteUnit::write_content(Content content) {
+    content = content;
     feedback_sign = "wrote";
     return feedback_sign;
 }

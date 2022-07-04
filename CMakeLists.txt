@@ -65,10 +65,10 @@ add_executable(
         src/Core/Lingo/Lingo.h
         src/Core/Storage.cpp
         src/Core/Storage.h
-        src/Core/Machine/NeedsPerceptionMachine.cpp
-        src/Core/Machine/NeedsPerceptionMachine.h
-        src/Core/Machine/BaseMachine.cpp
-        src/Core/Machine/BaseMachine.h
+        src/Core/Machine/NeedsMachine.cpp
+        src/Core/Machine/NeedsMachine.h
+        src/Core/Unit/BaseMachine.cpp
+        src/Core/Unit/BaseMachine.h
         src/Core/Object/Object.cpp
         src/Core/Object/Object.h
         src/Core/Unit/SenderUnit.cpp
@@ -85,6 +85,6 @@ add_executable(
         src/Core/Unit/AddressUnit.h
         src/Core/Unit/ContentUnit.cpp
         src/Core/Unit/ContentUnit.h
-)
+        src/Core/Content/Content.cpp src/Core/Content/Content.h src/Core/Machine/MachineCollection.h)
 
 

@@ -15,7 +15,7 @@ private:
 
 public:
     /// 写入内容
-    std::string write_content(std::string content);
+    Content write_content(Content content);
 };
 
 

@@ -15,7 +15,7 @@ private:
 
 public:
     /// 接收内容
-    std::string receive_content(std::string content);
+    Content receive_content(Content content);
 
 };
 

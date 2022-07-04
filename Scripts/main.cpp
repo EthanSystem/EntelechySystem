@@ -1,10 +1,14 @@
 #include <iostream>
 #include <ctime>
+#include "../src/Core/Machine/MachineCollection.h"
 
 /**
  * 主程序。简单的世界模拟器，用于初始化和运行模型。
  * @return
  */
+
+//using namespace EScore;
+
 int main() {
     /// 设置：总步数
     int totol_step = 1000;
@@ -19,7 +23,7 @@ int main() {
 
     /// todo 初始化模型 ==========
 
-    //
+
 
     /// =========================
 

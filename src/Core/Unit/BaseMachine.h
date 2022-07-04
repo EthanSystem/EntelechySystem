@@ -10,18 +10,24 @@
 //#include <boost/uuid/uuid_io.hpp>
 //#include <boost/uuid/uuid_generators.hpp>
 #include "../Object/Object.h"
-#include "../Unit/SenderUnit.h"
-#include "../Unit/ReceiverUnit.h"
-#include "../Unit/ReadUnit.h"
+#include "SenderUnit.h"
+#include "ReceiverUnit.h"
+#include "ReadUnit.h"
+#include "WriteUnit.h"
+#include "../Content/Content.h"
 
+/**
+ * 基机器类
+ */
 class BaseMachine : public Object {
+
 //private:
 //    /// 类型名称
-//     std::string type_name="machine";
+//     std::string object_type_name="machine";
 //    /// id
 //    boost::uuids::uuid id = boost::uuids::random_generator()();
 //    /// id名称
-//    std::string uuid_string = boost::uuids::to_string(id);
+//    std::string id_string = boost::uuids::to_string(id);
 public:
 //    void set_type_name();
 
@@ -36,6 +42,9 @@ public:
 
     /// 写入单元
     WriteUnit writeUnit;
+
+    /// 反馈信号内容
+    Content feedbackSignContent;
 };
 
 

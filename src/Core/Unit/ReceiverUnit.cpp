@@ -6,9 +6,9 @@
 
 #include <utility>
 
-std::string ReceiverUnit::receive_content(std::string content) {
-    /// TODO 对接管线
-    content_body = content;
+Content ReceiverUnit::receive_content(Content content) {
+    // todo 对接管线
+    content = content;
     feedback_sign = "received";
     return feedback_sign;
 }
