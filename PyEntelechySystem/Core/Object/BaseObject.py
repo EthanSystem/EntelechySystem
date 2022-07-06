@@ -5,7 +5,7 @@
 @Desc   : 
 """
 
-import uuid
+from PyEntelechySystem import *
 
 
 class BaseObject:
@@ -13,17 +13,17 @@ class BaseObject:
     基对象类，生成id与id名称。
     """
 
-    type_name: str = 'object type'
+    type_name = 'base object type'
+    uid = uuid.uuid4()
+    uid_string = 'str: ' + uid.__str__()
+    # type_name:str
+    # uid:uuid
+    # uid_string:str
 
-    id: uuid = uuid.uuid4()
-
-    id_string: str = id.__str__()
-
-    def __int__(self, type_name, id):
-        self.type_name = type_name
-        self.id = id
+    def __int__(self, *args, **kwargs):
+        self.type_name = 'base object type'
+        self.uid = uuid.uuid4()
+        self.uid_string = self.uid.__str__()
         pass
-
-
 
     pass

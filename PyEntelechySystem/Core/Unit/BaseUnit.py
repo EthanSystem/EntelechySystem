@@ -4,7 +4,8 @@
 @Date   : 2022/07/05
 @Desc   : 
 """
-import uuid
+
+from PyEntelechySystem import *
 
 from PyEntelechySystem.Core.Content import Content
 from PyEntelechySystem.Core.Object.BaseObject import BaseObject
@@ -12,16 +13,16 @@ from PyEntelechySystem.Core.Object.BaseObject import BaseObject
 
 class BaseUnit(BaseObject):
     """
-    基单元
+    基件
     """
 
-    content: Content
+    # content: Content
 
-    def __int__(self, content='', **kwargs):
-        super().__init__(self)
-        self.object_type_name = 'base unit type'
-        self.id = uuid.uuid4()
-        self.content = content
+    def __int__(self, *args, **kwargs):
+        self.type_name:str = 'base unit type'
+        # self.uid = uuid.uuid4()
+        self.content:Content = Content(type_name='base unit type', content_head='base unit content head', content_body='base unit content body')
+        super().__init__()
         pass
 
     pass
