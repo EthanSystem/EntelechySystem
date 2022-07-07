@@ -2,12 +2,9 @@
 @File   : WriteUnit.py
 @Author : Ethan Lin
 @Date   : 2022/07/06
-@Desc   : 
+@Desc   : 写件
 """
-from PyEntelechySystem import *
-
-from PyEntelechySystem.Core.Unit.BaseUnit import BaseUnit
-from PyEntelechySystem.Core.Content.Content import Content
+from PyEntelechySystem.Core.Unit import *
 
 @dataclass()
 class WriteUnit(BaseUnit):

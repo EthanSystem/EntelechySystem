@@ -1,14 +1,14 @@
 """
-@File   : Object.py
+@File   : BaseObject.py
 @Author : Ethan Lin
 @Date   : 2022/07/05
 @Desc   : 
 """
 
-from PyEntelechySystem import *
+from PyEntelechySystem import dataclass,uuid
 
 
-@dataclass
+@dataclass()
 class BaseObject:
     """
     基对象类，生成id与id名称。

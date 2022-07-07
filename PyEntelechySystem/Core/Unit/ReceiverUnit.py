@@ -2,14 +2,12 @@
 @File   : ReceiverUnit.py
 @Author : Ethan Lin
 @Date   : 2022/07/06
-@Desc   : 
+@Desc   : 接收件
 """
 
-from PyEntelechySystem import *
+from PyEntelechySystem.Core.Unit import *
 
-from PyEntelechySystem.Core.Unit.BaseUnit import BaseUnit
-from PyEntelechySystem.Core.Content.Content import Content
-
+@dataclass()
 class ReceiverUnit(BaseUnit):
     """接收件"""
 
@@ -28,7 +26,7 @@ class ReceiverUnit(BaseUnit):
 
         # TODO 对接管线
 
-        self.feedback_sign = Content(type_name='send feedback sign type', head='', _body='received')
+        self.feedback_sign = Content(type_name='send feedback sign type', head='', body='received')
         self.content = content
         return content, self.feedback_sign
         pass

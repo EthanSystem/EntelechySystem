@@ -5,13 +5,12 @@
 @Desc   : 
 """
 
-from PyEntelechySystem import *
+from PyEntelechySystem import dataclass,uuid
 
-from PyEntelechySystem.Core.Object.BaseObject import BaseObject
+from PyEntelechySystem.Core.Base.BaseContent import BaseContent
 
-
-@dataclass
-class Content(BaseObject):
+@dataclass()
+class Content(BaseContent):
     """
     内容对象
     """
@@ -34,12 +33,5 @@ class Content(BaseObject):
     #     super().__init__()
     #     pass
 
-    def set_content_body(self, content_body):
-        self.body = content_body
-        pass
-
-    def set_content_head(self, content_head):
-        self.head = content_head
-        pass
 
     pass
