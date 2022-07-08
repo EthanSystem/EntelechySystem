@@ -5,7 +5,7 @@
 @Desc   : 
 """
 
-from PyEntelechySystem import *
+from PyEntelechySystem import dataclass,uuid,np
 from PyEntelechySystem.Core.Base.BaseObject import BaseObject
 from PyEntelechySystem.Core.Base.BaseContent import BaseContent
 from PyEntelechySystem.Core.Base.BaseUnit import BaseUnit

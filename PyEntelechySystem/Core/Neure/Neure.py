@@ -32,3 +32,20 @@ class Neure(BaseObject):
         :type space_range:
         """
         pass
+
+    def set_neure_id(self):
+        pass
+
+    def set_neure_type(self):
+        pass
+
+
+    def set_axon_id(self):
+        pass
+
+
+    def set_dendrite(self):
+        pass
+
+
+
