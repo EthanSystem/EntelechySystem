@@ -6,6 +6,9 @@
 """
 
 from PyEntelechySystem.Core.Machine import *
+from PyEntelechySystem.Core.Unit import ReceiverUnit
+from PyEntelechySystem.Core.Content.Content import Content
+
 
 @dataclass
 class NeedMachine:
@@ -14,13 +17,28 @@ class NeedMachine:
     """
 
     # NOW
+    receiverUnit: ReceiverUnit = ReceiverUnit()
+    senderUnit:Sender
 
-    # 接收需求信号
+    content: Content = Content(type_name='content type')
+
     def receive_want_to_need_sign(self):
+        """
+        接收需求信号
+        :return:
+        :rtype:
+        """
+        self.content, self.receiverUnit.feedback_sign = self.receiverUnit.receive_content(content=self.content)
         pass
 
     # 发送需求
     def send_need(self):
+        """
+        发送需求
+        :return:
+        :rtype:
+        """
+        self.content,self.senderUnit.send_content()
         pass
 
-    pass
+    pass  # class

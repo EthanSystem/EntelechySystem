@@ -13,9 +13,9 @@ class ReceiverUnit(BaseUnit):
 
     type_name: str = 'write unit type'
     content: Content = Content(type_name='content type', head='receiver unit content head', body='receiver unit content body')
-    feedback_sign: Content = Content(type_name='feedback sign type', head='receiver unit feedback sign content head', body='receiver unit feedback sign content body')
+    # feedback_sign: Content = Content(type_name='feedback sign type', head='receiver unit feedback sign content head', body='receiver unit feedback sign content body')
 
-    def send_content(self, content: Content):
+    def receive_content(self, content: Content):
         """
         接收内容
         :param content: 内容
@@ -26,9 +26,9 @@ class ReceiverUnit(BaseUnit):
 
         # TODO 对接管线
 
-        self.feedback_sign = Content(type_name='send feedback sign type', head='', body='received')
+        feedback_sign:Content = Content(type_name='feedback sign type', head='', body='received')
         self.content = content
-        return content, self.feedback_sign
+        return content, feedback_sign
         pass
 
     pass
