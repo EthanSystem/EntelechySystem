@@ -6,7 +6,7 @@
 """
 
 from PyEntelechySystem.Core.Machine import *
-from PyEntelechySystem.Core.Unit import ReceiverUnit
+from PyEntelechySystem.Core.Unit.Units import *
 from PyEntelechySystem.Core.Content.Content import Content
 
 
@@ -17,8 +17,9 @@ class NeedMachine:
     """
 
     # NOW
-    receiverUnit: ReceiverUnit = ReceiverUnit()
-    senderUnit:Sender
+    receiverUnit: ReceiverUnit = ReceiverUnit
+    senderUnit: SenderUnit = SenderUnit;
+
 
     content: Content = Content(type_name='content type')
 
@@ -38,7 +39,7 @@ class NeedMachine:
         :return:
         :rtype:
         """
-        self.content,self.senderUnit.send_content()
+        self.content, self.senderUnit.send_content()
         pass
 
     pass  # class

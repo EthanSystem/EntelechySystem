@@ -31,4 +31,4 @@ class ReceiverUnit(BaseUnit):
         return content, feedback_sign
         pass
 
-    pass
+    pass  # class

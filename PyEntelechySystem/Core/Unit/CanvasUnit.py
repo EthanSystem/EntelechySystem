@@ -28,5 +28,5 @@ class CanvasUnit(BaseUnit):
 
         self.feedback_sign = Content(type_name='connect feedback sign type', head='', body='showed')
         return self.feedback_sign
-        pass
+        pass  # class
 

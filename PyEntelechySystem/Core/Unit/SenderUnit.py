@@ -32,4 +32,4 @@ class SenderUnit(BaseUnit):
         return content, self.feedback_sign
         pass
 
-    pass
+    pass  # class
