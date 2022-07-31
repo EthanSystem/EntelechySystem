@@ -25,9 +25,9 @@ class NeedMachine:
 
     def receive_want_to_need_sign(self):
         """
-        接收需求信号
-        :return:
-        :rtype:
+
+        Returns:
+
         """
         self.content, self.receiverUnit.feedback_sign = self.receiverUnit.receive_content(content=self.content)
         pass
@@ -35,9 +35,9 @@ class NeedMachine:
     # 发送需求
     def send_need(self):
         """
-        发送需求
-        :return:
-        :rtype:
+
+        Returns:
+
         """
         self.content, self.senderUnit.send_content()
         pass

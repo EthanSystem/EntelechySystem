@@ -2,12 +2,14 @@
 @File   : Units.py
 @Author : Ethan Lin
 @Date   : 2022/07/12
-@Desc   : 
+@Desc   : 所有基本元件集合
 """
 
 from PyEntelechySystem import dataclass
 from PyEntelechySystem.Core.Content import Content
 from PyEntelechySystem.Core.Base import BaseUnit
+
+
 
 """
 @File   : ReadUnit.py
@@ -19,7 +21,9 @@ from PyEntelechySystem.Core.Base import BaseUnit
 
 @dataclass()
 class ReadUnit(BaseUnit):
-    """读件"""
+    """
+
+    """
 
     type_name: str = 'read unit type'
     content: Content = Content(type_name='content type', head='read unit content head', body='read unit content body')
